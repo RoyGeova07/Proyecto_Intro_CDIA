@@ -56,7 +56,7 @@ def capturar_nombre():
     return input("Ingrese su nombre: ")
 
 def mostrar_menu():
-    print("\nMenú:")
+    print("\nMenu:")
     print("1. Sumar fracciones")
     print("2. Restar fracciones")
     print("3. Multiplicar fracciones")
@@ -74,7 +74,7 @@ def main():
     nombre = capturar_nombre()
     while True:
         mostrar_menu()
-        opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione una opcion: ")
 
         if opcion == '1':
             fraccion1 = obtener_fraccion()
@@ -92,13 +92,13 @@ def main():
             fraccion1 = obtener_fraccion()
             fraccion2 = obtener_fraccion()
             resultado = fraccion1 * fraccion2
-            print("El resultado de la multiplicación es:", resultado.numerador, "/", resultado.denominador)
+            print("El resultado de la multiplicacion es:", resultado.numerador, "/", resultado.denominador)
 
         elif opcion == '4':
             fraccion1 = obtener_fraccion()
             fraccion2 = obtener_fraccion()
             resultado = fraccion1 / fraccion2
-            print("El resultado de la división es:", resultado.numerador, "/", resultado.denominador)
+            print("El resultado de la division es:", resultado.numerador, "/", resultado.denominador)
 
         elif opcion == '5':
             fraccion1 = obtener_fraccion()
@@ -106,16 +106,16 @@ def main():
             if fraccion1 == fraccion2:
                 print("Las fracciones son iguales")
             elif fraccion1 < fraccion2:
-                print("La primera fracción es menor que la segunda")
+                print("La primera fraccion es menor que la segunda")
             else:
-                print("La primera fracción es mayor que la segunda")
+                print("La primera fraccion es mayor que la segunda")
 
         elif opcion == '6':
             print("Gracias por usar la Calculadora de Fracciones, hasta luego", nombre)
             break
 
         else:
-            print("Opción inválida, por favor seleccione nuevamente.")
+            print("Opcion invalida, por favor seleccione nuevamente.")
 
 if __name__ == "__main__":
     main() 
